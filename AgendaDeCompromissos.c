@@ -82,7 +82,7 @@ int main (void){
 //     }
 // }
 
-// //  Main para teste do calendario apenas pode retirar depois
+// //  Main para teste do calendario, pode retirar depois
 // int main() {
 //     int ano, diaInicio;
 
@@ -102,3 +102,17 @@ int main (void){
 
 
 
+// Funçao teste para o ano bisexto
+// int bisexto(int anoBisexto){
+//     if ((ano % 4 == 0 && ano % 100 !=0) ano || (ano % 400 == 0)){
+//         return 1;    
+//     else{
+//         return 0;
+//     }
+// }
+// int main(){
+//     int anoBisexto;
+//     bisexto(anoBisexto);
+//     // int x = bisexto(anoBisexto)
+//     // return x;
+// }
