@@ -1,35 +1,5 @@
 #include <stdio.h>
 
-// O fisioterapeuta trata de pacientes com dores urgentes de todos os tipos, para isso ele trabalha todos os dias. 
-// Ele faz planos de pacotes de atendimentos diários para cada paciente. Ou seja, 
-// um paciente pode solicitar 10 dias de tratamento, 15 dias, etc… O fisioterapeuta só consegue atender 5 pacientes por dia. 
-// O problema é que ele está se perdendo ao fazer agendamentos de pacientes para ao longo do ano, 
-// eventualmente ele acaba com mais de 5 pacientes por dia e precisa cancelar. Para resolver esse problema ele precisa que você crie 
-// uma agenda que que cadastre agendamentos e indique quantos pacientes ele deve atender em cada dia do ano
-
-// Escreva um programa em C que exiba um calendário de um ano e gerencie agendamentos. 
-//Ao iniciar, o programa deve solicitar ao usuário o dia da semana em que 1º de janeiro cai e se o ano é bissexto ou não. 
-// Com essas informações pode-se montar todo o calendário. Depois disso, o programa deve permitir em um menu: 
-
-// (i) mostrar o calendário.
-
-// (ii) inserir agendamentos.  Esta função deve solicitar ao usuário a data de início e a duração do agendamento. Em um dado dia, não se pode ter mais do que 5 pacientes agendados. 
-//Caso ocorra um conflito, deve-se dizer que não pode agendar naquele dia.  
-
-// (iii) mostrar o calendário com agendamentos.
-
-// No `main()`, você deve ter um array de agendamentos que vai controlar quais dias tem quantos agendamentos. 
-// O array deve ter o tamanho do ano. Este array deve ser acessado pelas funções.
-
-// Janeiro
-// Dom Seg Ter Qua Qui Sex Sab
-//                   1   2   3
-//   4   5   6   7   8   9  10
-//  11  12  13  14  15  16  17
-//  18  19  20  21  22  23  24
-//  25  26  27  28  29  30  31
-
-
 // 30 = Abril, junho, setembro e novembro
 // 31 = Janeiro , março, maio, julho, agosto, outubro , dezembro
 // 28/29 Fevereiro
@@ -77,3 +47,58 @@ int main (void){
 
     return 0;
 }
+
+
+
+// // Funçao para saber em qual dia da semana inicia o ano 
+// int calcularDiaInicio(int ano) {
+//     int diaInicio = (ano * 365 + (ano - 1) / 4 - (ano - 1) / 100 + (ano) / 400) % 7;
+//     return diaInicio;
+// }
+// // Funçao q cria um calendario e ja define quantos dias tem no mes 
+// void Calendario(int ano, int diaInicio) {
+//     int diaAtual;
+//     int diasnoMes[12] = {31, 28 + (ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0)), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+//     char *nomesMeses[12] = {"Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
+    
+//     printf("Calendario de %d:\n\n", ano, calcularDiaInicio(diaInicio));
+//     for (int mes = 0; mes < 12; mes++) {
+//         printf("----------- %s -----------\n", nomesMeses[mes]);
+//         printf(" Dom Seg Ter Qua Qui Sex Sab\n");
+//         for (int espacos = 0; espacos < diaInicio; espacos++) {
+//             printf("    ");
+//         }
+//         diaAtual = 1;
+
+//         while (diaAtual <= diasnoMes[mes]) {
+//             printf("%4d", diaAtual);
+//             if ((diaAtual + diaInicio) % 7 == 0) {
+//                 printf("\n");
+//             }
+//             diaAtual++;
+//         }
+//         diaInicio = (diaInicio + diasnoMes[mes]) % 7;
+//         printf("\n\n");
+//     }
+// }
+
+// //  Main para teste do calendario apenas pode retirar depois
+// int main() {
+//     int ano, diaInicio;
+
+//     printf("Qual o ano do calendario: ");
+//     scanf("%d", &ano);
+
+//     diaInicio = calcularDiaInicio(ano);
+
+//     printf("Em qual dia da semana o ano começa(0 - Domingo, 1 - Segunda-feira..): ");
+//     scanf("%d", &diaInicio);
+  
+//     Calendario(ano, diaInicio);
+
+//     return 0;
+// }
+
+
+
+
