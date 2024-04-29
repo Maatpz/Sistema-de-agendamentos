@@ -55,8 +55,8 @@ int main (void){
 //     int diaInicio = (ano * 365 + (ano - 1) / 4 - (ano - 1) / 100 + (ano) / 400) % 7;
 //     return diaInicio;
 // }
-// // Funçao q cria um calendario e ja define quantos dias tem no mes 
-// int Calendario(int ano, int diaInicio) {
+// // Funçao q cria um calendario e ja define quantos dias tem no mes, esta dando as vezes 
+// int calendario(int ano, int diaInicio) {
 //     int diaAtual;
     //// verifica se tem ano bisexto direto
     //// int diasnoMes[12] = {31, 28 + (ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0)), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -95,26 +95,36 @@ int main (void){
 
 
 
-    // int agendamento[365];
-    // int opcao;
-    // do{
-    //     printf("1-mostrar calendario");
-    //     scanf("")
-    //     printf("2-Inserir agendamentos");
-    //     scanf("")
-    //     printf("3-mostrar calendarios com agendamentos");
-    //     scanf("")
-    // }while(opcao>1 && opcao<3);
-
-    // switch(opcao)
-    //     case 1:
-    //         return (Calendario(ano,diaInicio);
-    //         break;
-    //     case 2:
-
-//     return 0;
+// int agendamento[365];
+// int main(){
+// int opcao;
+// do {
+//     printf("Menu:\n");
+//     printf("1. Mostrar calendário\n");
+//     printf("2. Inserir agendamento\n");
+//     printf("3. Mostrar calendário com agendamentos\n");
+//     printf("4. Sair\n");
+//     printf("Opção: ");
+//     scanf("%d", &opcao);
+    
+//     switch (opcao) {
+//           case 1:
+//             calendario();
+//             break;
+//           case 2: {
+        
+//             break;
+//         }
+//           case 3:
+            
+//             break;
+//           case 4:
+//                 return 0;
+//             default:
+//                 printf("Opção inválida.\n");
+//         }
+//     } while (opcao != 4);
 // }
-
 
 
 
