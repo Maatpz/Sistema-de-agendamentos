@@ -86,19 +86,32 @@ int main (void){
 // //  Main para teste do calendario, pode retirar depois
 // int main() {
 //     int ano, diaInicio;
-
 //     printf("Qual o ano do calendario: ");
 //     scanf("%d", &ano);
-
 //     diaInicio = calcularDiaInicio(ano);
-
 //     printf("Em qual dia da semana o ano começa(0 - Domingo, 1 - Segunda-feira..): ");
 //     scanf("%d", &diaInicio);
-  
 //     Calendario(ano, diaInicio);
+
+    // int opcao;
+    // do{
+    //     printf("1-mostrar calendario");
+    //     scanf("")
+    //     printf("2-Inserir agendamentos");
+    //     scanf("")
+    //     printf("3-mostrar calendarios com agendamentos");
+    //     scanf("")
+    // }while(opcao>1 && opcao<3);
+
+    // switch(opcao)
+    //     case 1:
+    //         return (Calendario(ano,diaInicio);
+    //         break;
+    //     case 2:
 
 //     return 0;
 // }
+
 
 
 
