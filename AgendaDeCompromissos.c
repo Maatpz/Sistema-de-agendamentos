@@ -58,12 +58,13 @@ int main (void){
 // // Funçao q cria um calendario e ja define quantos dias tem no mes 
 // void Calendario(int ano, int diaInicio) {
 //     int diaAtual;
-//     int diasnoMes[12] = {31, 28 + (ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0)), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    //// verifica se tem ano bisexto direto
+    //// int diasnoMes[12] = {31, 28 + (ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0)), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 //     char *nomesMeses[12] = {"Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
     
 //     printf("Calendario de %d:\n\n", ano, calcularDiaInicio(diaInicio));
 //     for (int mes = 0; mes < 12; mes++) {
-//         printf("----------- %s -----------\n", nomesMeses[mes]);
+//         printf(" %t \n", nomesMeses[mes]);
 //         printf(" Dom Seg Ter Qua Qui Sex Sab\n");
 //         for (int espacos = 0; espacos < diaInicio; espacos++) {
 //             printf("    ");
