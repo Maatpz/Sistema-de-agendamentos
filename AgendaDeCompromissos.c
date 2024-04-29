@@ -93,6 +93,9 @@ int main (void){
 //     scanf("%d", &diaInicio);
 //     Calendario(ano, diaInicio);
 
+
+
+    // int agendamento[365];
     // int opcao;
     // do{
     //     printf("1-mostrar calendario");
