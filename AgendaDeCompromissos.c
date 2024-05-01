@@ -55,33 +55,83 @@ int main (void){
 //     int diaInicio = (ano * 365 + (ano - 1) / 4 - (ano - 1) / 100 + (ano) / 400) % 7;
 //     return diaInicio;
 // }
-// // Funçao q cria um calendario e ja define quantos dias tem no mes, esta dando as vezes 
-// int calendario(int ano, int diaInicio) {
+
+// Funçao teste para o ano bisexto
+// int bisexto(int anoBisexto){
+//     if ((ano % 4 == 0 && ano % 100 !=0) ano || (ano % 400 == 0)){
+//         return 1;    
+//     else{
+//         return 0;
+//     }
+// }
+// int main(){
+//     int anoBisexto;
+//     bisexto(anoBisexto);
+//     // int x = bisexto(anoBisexto)
+//     // return x;
+// }
+
+
+
+// // Funçao q cria um calendario e ja define quantos dias tem no mes. 
+// // Troquei algumas coisas pois vez ou outra estava dando erro na compilação, o ano bisexto esta sendo feito direto pq e um calculo padrao
+// // entao nao deve ter problema, testem o calendario para ver se esta tudo certo. 
+
+// int Calendario(int ano, int diaInicio) {
 //     int diaAtual;
-    //// verifica se tem ano bisexto direto
-    //// int diasnoMes[12] = {31, 28 + (ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0)), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-//     char *nomesMeses[12] = {"Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
-    
-// // printf("Calendario de %d:\n\n", ano, calcularDiaInicio(diaInicio));
-//     for (int mes = 0; mes < 12; mes++) {
-//         printf(" %d \n", nomesMeses[mes]);
+//     int diasnoMes[12] = {31, 28 + (ano % 4 == 0 && (ano % 100!= 0 || ano % 400 == 0)), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+//     printf("Calendario de %d:\n\n", ano);
+
+//     for (int mesNum = 0; mesNum < 12; mesNum++) {
+//         if (mesNum == 0)
+//             printf("Janeiro\n");
+//         else if (mesNum == 1) 
+//             printf("Fevereiro\n");
+//         else if (mesNum == 2) 
+//             printf("Marco\n");
+//         else if (mesNum == 3)
+//             printf("Abril\n");
+//         else if (mesNum == 4) 
+//             printf("Maio\n");
+//         else if (mesNum == 5) 
+//             printf("Junho\n");
+//         else if (mesNum == 6) 
+//             printf("Julho\n");
+//         else if (mesNum == 7) 
+//             printf("Agosto\n");
+//         else if (mesNum == 8) 
+//             printf("Setembro\n");
+//         else if (mesNum == 9) 
+//             printf("Outubro\n");
+//         else if (mesNum == 10) 
+//             printf("Novembro\n");
+//         else if (mesNum == 11) 
+//             printf("Dezembro\n");
+
 //         printf(" Dom Seg Ter Qua Qui Sex Sab\n");
 //         for (int espacos = 0; espacos < diaInicio; espacos++) {
 //             printf("    ");
 //         }
 //         diaAtual = 1;
 
-//         while (diaAtual <= diasnoMes[mes]) {
+//         while (diaAtual <= diasnoMes[mesNum]) {
 //             printf("%4d", diaAtual);
 //             if ((diaAtual + diaInicio) % 7 == 0) {
 //                 printf("\n");
 //             }
 //             diaAtual++;
 //         }
-//         diaInicio = (diaInicio + diasnoMes[mes]) % 7;
+//         diaInicio = (diaInicio + diasnoMes[mesNum]) % 7;
 //         printf("\n\n");
 //     }
 // }
+
+
+
+
+
+
 
 // //  Main para teste do calendario, pode retirar depois
 // int main() {
@@ -92,7 +142,7 @@ int main (void){
 //     printf("Em qual dia da semana o ano começa(0 - Domingo, 1 - Segunda-feira..): ");
 //     scanf("%d", &diaInicio);
 //     Calendario(ano, diaInicio);
-
+// }
 
 
 // int agendamento[365];
@@ -124,22 +174,4 @@ int main (void){
 //                 printf("Opção inválida.\n");
 //         }
 //     } while (opcao != 4);
-// }
-
-
-
-
-// Funçao teste para o ano bisexto
-// int bisexto(int anoBisexto){
-//     if ((ano % 4 == 0 && ano % 100 !=0) ano || (ano % 400 == 0)){
-//         return 1;    
-//     else{
-//         return 0;
-//     }
-// }
-// int main(){
-//     int anoBisexto;
-//     bisexto(anoBisexto);
-//     // int x = bisexto(anoBisexto)
-//     // return x;
 // }
