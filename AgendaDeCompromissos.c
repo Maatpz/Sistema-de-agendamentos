@@ -73,7 +73,7 @@ int main() {
         int mes;
         int duracao;
         int contador=0;
-        printf("Menu:\n");
+        printf("\nMenu:\n");
         printf("1-Mostrar Calendário:\n");
         printf("2- Inserir Agendamento:\n");
         printf("3- Mostrar Calendário com agendamentos:\n");
@@ -85,7 +85,7 @@ int main() {
                 calendario(ano,dia_Inicio);
                 break;
             case 2:{
-                
+                //agendamento nao esta concluido
                 printf("Qual dia do agendamento(1 ate 31):");
                 scanf("%d",&dia_agen);
                 printf("Qual o mes do agendamento(1 ate 12):");
