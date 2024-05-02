@@ -9,7 +9,7 @@
     @Maatpz/ @Guilherme1-exe/ @lucasjose2702
 
 ## Tecnologia usada
-     Programa feito em C.
+    C.
      
 ## Problemas enfrentados
       Problemas para criar um calendario que marca os agendamentos feitos.
