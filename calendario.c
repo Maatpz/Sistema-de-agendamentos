@@ -27,6 +27,7 @@ int main(void){
         int anoAgendamento[365] = {0};
     }
     
+    //loop em do-while do menu
     int opcao;
     do{
         printf("\n******Menu******\n");
@@ -96,17 +97,14 @@ int calendario(int ano, int diaInicio){
             printf("Dezembro\n");
 
         printf(" Dom Seg Ter Qua Qui Sex Sab\n");
-        for (int espacos = 0; espacos < diaInicio; espacos++)
-        {
+        for (int espacos = 0; espacos < diaInicio; espacos++){
             printf("    ");
         }
         diaAtual = 1;
 
-        while (diaAtual <= diasnoMes[mesNum])
-        {
+        while (diaAtual <= diasnoMes[mesNum]){
             printf("%4d", diaAtual);
-            if ((diaAtual + diaInicio) % 7 == 0)
-            {
+            if ((diaAtual + diaInicio) % 7 == 0){
                 printf("\n");
             }
             diaAtual++;
