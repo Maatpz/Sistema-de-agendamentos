@@ -114,7 +114,7 @@ int calendario(int ano, int diaInicio){
     }
 };
 
-// Calendario com agendamento!
+// Calendario com o agendamento!
 int calendarioComAgendamentos(int ano, int diaInicio){
     int diaAtual;
     int diasnoMes[12] = {31, 28 + (ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0)), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
